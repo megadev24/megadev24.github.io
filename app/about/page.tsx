@@ -52,7 +52,7 @@ const About = () => {
       <Section>
         <Container>
           <HeaderContainer>
-            <Heading>Hi! I'm Junior</Heading>
+            <Heading>{"Hi! I'm Junior"}</Heading>
           </HeaderContainer>
           <SubHeading>About Me</SubHeading>
           <Text>
