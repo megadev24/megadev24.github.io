@@ -21,7 +21,7 @@ export const Navbar = styled.header`
   background-color: black;
   justify-content: space-between;
   padding: 1rem;
-  height: 40px;
+  height: 60px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 `;
 
@@ -130,8 +130,8 @@ const Header = () => {
             {isExpanded ? "Frederick P. Smeltzer" : "FPS"}
           </Heading>
           <Nav>
-            <StyledLink href="/">LP</StyledLink>
-            <StyledLink href="/home">Home</StyledLink>
+            {/* <StyledLink href="/">LP</StyledLink> */}
+            <StyledLink href="/">Home</StyledLink>
             <StyledLink href="/about">About</StyledLink>
             <StyledLink href="/projects">Projects</StyledLink>
             {/* <StyledLink to="/contrabot">Contrabot</StyledLink> */}
