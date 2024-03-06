@@ -22,6 +22,9 @@ const Section = styled.section`
 const Container = styled.div`
   width: 80%;
   max-width: 1000px;
+  @media (max-width: 1000px) {
+    width: 80vw;
+  }
 `;
 
 const HeaderContainer = styled.div`
@@ -67,10 +70,13 @@ const About = () => {
       >
         <Image
           src={img}
-          width={540 * 1.48}
-          height={542 * 1.48}
+          width={1079 / 2 * 1.48}
+          height={727 / 2 * 1.48}
           alt="Picture of the author"
-          style={{ borderRadius: "18px" }}
+          style={{
+            borderRadius: "18px",
+            overflow: "hidden",
+          }}
           unoptimized
         />
         <Container

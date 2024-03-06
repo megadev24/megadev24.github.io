@@ -62,7 +62,7 @@ export const Section = styled.section`
 
 export const ProjectGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 2rem;
 
   @media (max-width: 768px) {
@@ -89,9 +89,18 @@ export const ProjectCard = styled.div`
 `;
 
 export const Title = styled.h2`
+  display: flex;
+  justify-content: center;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
+`;
+
+export const Tech = styled.p`
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 0.5rem;
+  margin: 0;
 `;
 
 export const Description = styled.p`

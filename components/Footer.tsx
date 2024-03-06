@@ -33,13 +33,13 @@ const Link = styled.a`
 const Footer: React.FC = () => {
   return (
     <FooterContainer>
-      <Link href="https://www.linkedin.com/in/frederick-smeltzer-b9038898/">
+      <Link href="https://www.linkedin.com/in/frederick-smeltzer-b9038898/" target="_blank">
         <FaLinkedin />
       </Link>
       <Link href="mailto:fsmeltzer3@gmail.com">
         <FaEnvelope />
       </Link>
-      <Link href="https://github.com/megadev24">
+      <Link href="https://github.com/megadev24" target="_blank">
         <FaGithubAlt />
       </Link>
     </FooterContainer>
