@@ -9,10 +9,13 @@ import {
   Tech,
   Description,
   Button,
-} from "../../components/Header";
+} from "../../components/StyledComponents";
+import { useState } from "react";
 import { projects } from "../../utils/projects";
+import Model from "@/components/Model";
 
 const Projects: React.FC = () => {
+  const [open, setIsOpen] = useState(false);
   return (
     <div
       style={{
@@ -37,7 +40,11 @@ const Projects: React.FC = () => {
               <ProjectCard key={project.title}>
                 <Title>{project.title}</Title>
                 <Description>{project.description}</Description>
-                <Tech>{project.technologies.map((e,i) => i < project.technologies.length-1 ? `${e}, ` : `${e}`)}</Tech>
+                <Tech>
+                  {project.technologies.map((e, i) =>
+                    i < project.technologies.length - 1 ? `${e}, ` : `${e}`
+                  )}
+                </Tech>
                 <Container>
                   {project.demoUrl && (
                     <Button
@@ -46,12 +53,20 @@ const Projects: React.FC = () => {
                       Learn More
                     </Button>
                   )}
-                  {project.codeUrl && (
+                  {project.codeUrl && project.public && (
                     <Button
-                      style={{ backgroundColor: "gold", color: "black"}}
+                      style={{ backgroundColor: "gold", color: "black" }}
                       onClick={() => window.open(project.codeUrl, "_blank")}
                     >
                       Code
+                    </Button>
+                  )}
+                  {project.codeUrl && !project.public && (
+                    <Button
+                      style={{ backgroundColor: "gold", color: "black" }}
+                      onClick={() => setIsOpen(true)}
+                    >
+                      Request Access
                     </Button>
                   )}
                 </Container>
@@ -60,6 +75,7 @@ const Projects: React.FC = () => {
           </ProjectGrid>
         </Container>
       </Section>
+      <Model open={open} setIsOpen={setIsOpen} />
     </div>
   );
 };
