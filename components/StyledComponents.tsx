@@ -25,11 +25,11 @@ export const HomeContainer = styled(Container)`
 `;
 
 export const ResumeContainer = styled(FlexContainer)`
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  z-index: 2;
+  // position: absolute;
+  // transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // z-index: 2;
 `;
 
 export const AboutContainer = styled(FlexContainer)`
@@ -79,7 +79,7 @@ export const Heading = styled.h1`
 `;
 
 export const Greeting = styled.h1`
-  font-size: 4.2rem;
+  font-size: 4rem;
   font-weight: 600;
   margin: 0;
   color: #fff;
@@ -167,7 +167,8 @@ export const Card = styled.div`
 `;
 
 export const HomeCard = styled(Card)`
-  margin: 2rem;
+  margin-left: 1rem;
+  height: fit-content;
 `;
 
 export const ProjectCard = styled(Card)`
@@ -177,6 +178,11 @@ export const ProjectCard = styled(Card)`
     transform: translateY(-4px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   }
+`;
+
+export const AboutCard = styled(Card)`
+  color: black;
+  border-radius: 12px;
 `;
 
 export const Name = styled.h1``;
@@ -192,7 +198,7 @@ export const Title = styled.h2`
 
 export const Tech = styled.p`
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   padding-top: 0.5rem;
   margin: 0;
 `;

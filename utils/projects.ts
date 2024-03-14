@@ -60,7 +60,7 @@ export const projects: Project[] = [
     title: "Thunder Bear",
     description:
       "2D Hero platformer game where the player controls a bear with the power of thunder to defeat enemies and reach the end of the level.",
-    technologies: ["C#"],
+    technologies: ["TBD"],
     image: "https://via.placeholder.com/150",
     demoUrl: "",
     codeUrl: "",
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     title: "Coma",
     description:
       "Top-down 2D game where the player controls a character in a coma and must navigate through a maze of distorted memories to escape.",
-    technologies: ["Idk", "IDK"],
+    technologies: ["TBD"],
     image: "https://via.placeholder.com/150",
     demoUrl: "",
     codeUrl: "",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     title: "Trust",
     description:
       "2D platformer where 2 players work together to ascend a single very tall level to reach the end",
-    technologies: ["Idk", "IDK"],
+    technologies: ["C#", "Godot", "Affinity Photo"],
     image: "https://via.placeholder.com/150",
     demoUrl: "",
     codeUrl: "",
