@@ -59,7 +59,7 @@ const Home = () => {
             <Description>Frontend Developer</Description>
             <Date>02/2024</Date>
             <DownloadLink
-              href="../public/Frederick Smeltzer - FE Resume 2023_24-1.pdf"
+              href="/Frederick Smeltzer - FE Resume 2023_24-1.pdf"
               download
             >
               {" "}
