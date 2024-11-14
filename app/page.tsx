@@ -42,9 +42,9 @@ const Home = () => {
             <Container style={{justifyContent: "space-between" }}>
               <HomeCard style={{ alignItems: "center" }}>
                 <Description>Frontend Developer</Description>
-                <Date>02/2024</Date>
+                <Date>11/2024</Date>
                 <DownloadLink
-                  href="/Frederick Smeltzer - FE Resume 2023_24-1.pdf"
+                  href="/Frederick Smeltzer - FE Resume 2023_24.pdf"
                   download
                 >
                   {" "}
