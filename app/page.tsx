@@ -13,14 +13,15 @@ import {
   FlexContainer,
   Container,
 } from "../components/StyledComponents";
+import RainBackground from "@/components/RainBackground";
 import Image from "next/image";
 import img from "../public/images/meinhou.jpg";
-// import ScrollingImages from "@/components/ScrollingImages";
 
 const Home = () => {
   const size = 10.5;
   return (
     <Section>
+      <RainBackground />
       <HomeContainer>
         {/* <ScrollingImages images={images} /> */}
         {/* <OpaqueContainer /> */}

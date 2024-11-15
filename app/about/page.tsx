@@ -11,10 +11,12 @@ import {
   SubHeading,
   Text,
 } from "../../components/StyledComponents";
+import RainBackground from "@/components/RainBackground";
 
 const About = () => {
   return (
     <main>
+      <RainBackground />
       <AboutContainer>
         <AboutSection>
           <Image
@@ -32,7 +34,7 @@ const About = () => {
             <SubHeading>About Me</SubHeading>
             <AboutCard>
               <Text>
-                I&apos;m a passionate frontend developer with over 5 years of
+                I&apos;m a passionate frontend developer with over 6 years of
                 experience crafting dynamic and user-friendly web applications.
                 My journey in the world of programming began with a fascination
                 for creating interactive experiences that seamlessly blend form

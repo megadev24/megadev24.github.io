@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import { projects } from "../../utils/projects";
 import Model from "@/components/Model";
+import RainBackground from "@/components/RainBackground";
 
 const Projects: React.FC = () => {
   const [open, setIsOpen] = useState(false);
@@ -25,6 +26,8 @@ const Projects: React.FC = () => {
         marginBottom: "80px",
       }}
     >
+      <RainBackground />
+
       <Section>
         <Container
           style={{
