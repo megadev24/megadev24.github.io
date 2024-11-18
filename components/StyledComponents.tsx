@@ -14,6 +14,14 @@ export const CenteredContainer = styled.div`
   flex-direction: column;
 `;
 
+export const ProfileContainer = styled(Container)`
+  flex-direction: row;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
 export const HomeContainer = styled(Container)`
   align-items: center;
   border-radius: 18px;
@@ -22,27 +30,41 @@ export const HomeContainer = styled(Container)`
   height: fit-content;
   padding: 24px;
   width: 1000px;
+
+  @media (max-width: 768px) {
+    border: 1px solid white;
+    margin: 0 24px;
+  }
 `;
 
 export const ResumeContainer = styled(FlexContainer)`
-  // position: absolute;
-  // transform: translate(-50%, -50%);
-  // top: 50%;
-  // left: 50%;
-  // z-index: 2;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-left: 2rem;
+  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
 `;
 
 export const AboutContainer = styled(FlexContainer)`
   align-items: center;
   justify-content: center;
   margin-bottom: 80px;
+  border: 1px solid white;
+  border-radius: 18px;
+  padding: 0 2rem;
+  height: fit-content;
+  margin: 36px 24px 100px 24px;
 `;
 
 export const AboutDescriptionContainer = styled.div`
-  border: 1px solid white;
-  border-radius: 18px;
-  padding: 2rem;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,10 +101,12 @@ export const Heading = styled.h1`
 `;
 
 export const Greeting = styled.h1`
-  font-size: 4rem;
+  font-size: calc(1.5rem + 1vw);
   font-weight: 600;
   margin: 0;
   color: #fff;
+  min-font-size: 2rem;
+  max-font-size: 4rem;
 `;
 
 export const Nav = styled.nav`
@@ -114,16 +138,11 @@ export const Section = styled.section`
 `;
 
 export const AboutSection = styled(Section)`
-  display: flex;
   align-items: center;
   flex-direction: column;
   height: 100%;
-  margin-top: 2rem;
   background-color: transparent;
-  padding: 2rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
   max-width: 1000px;
   color: white;
 `;
@@ -164,14 +183,16 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  min-width: 252px;
 `;
 
 export const HomeCard = styled(Card)`
-  margin-left: 1rem;
+  margin-bottom: 8px;
   height: fit-content;
 `;
 
 export const ProjectCard = styled(Card)`
+  max-width: 400px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
@@ -197,10 +218,12 @@ export const Title = styled.h2`
 `;
 
 export const Tech = styled.p`
+  border-top: 1px solid black;
   font-size: 1rem;
   font-weight: 600;
   padding-top: 0.5rem;
   margin: 0;
+  margin-top: 12px;
 `;
 
 export const Description = styled.p`
@@ -225,6 +248,15 @@ export const Button = styled.button`
   }
 `;
 
+export const DefaultOptions = styled.div`
+  display: flex;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 export const DownloadLink = styled.a`
   color: blue;
 `;
@@ -233,6 +265,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 `;
 
 export const AboutHeading = styled.h2`

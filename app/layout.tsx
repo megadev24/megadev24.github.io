@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={inter.className}
-        style={{ margin: 0, backgroundColor: "black" }}
+        style={{ margin: 0, backgroundColor: "black"}}
       >
         <Header />
         {children}

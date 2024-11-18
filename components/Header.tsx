@@ -9,7 +9,9 @@ import {
   Heading,
   Nav,
   StyledLink,
+  DefaultOptions,
 } from "./StyledComponents";
+import MoreOptionsButton from "./MoreOptionsButton";
 
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -24,10 +26,18 @@ const Header = () => {
           {isExpanded ? "Frederick P. Smeltzer" : "FPS"}
         </Heading>
         <Nav>
-          <StyledLink href="/">Home</StyledLink>
-          <StyledLink href="/about">About</StyledLink>
-          <StyledLink href="/projects">Projects</StyledLink>
-          <StyledLink href="/contrabot">Contrabot</StyledLink>
+          <DefaultOptions>
+            <StyledLink href="/">Home</StyledLink>
+            <StyledLink href="/about">About</StyledLink>
+            <StyledLink href="/projects">Projects</StyledLink>
+            <StyledLink href="/contrabot">Contrabot</StyledLink>
+          </DefaultOptions>
+          <MoreOptionsButton>
+            <StyledLink href="/">Home</StyledLink>
+            <StyledLink href="/about">About</StyledLink>
+            <StyledLink href="/projects">Projects</StyledLink>
+            <StyledLink href="/contrabot">Contrabot</StyledLink>
+          </MoreOptionsButton>
         </Nav>
       </Navbar>
     </Container>

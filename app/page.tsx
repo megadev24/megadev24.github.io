@@ -10,7 +10,7 @@ import {
   ResumeContainer,
   HeaderContainer,
   Greeting,
-  FlexContainer,
+  ProfileContainer,
   Container,
 } from "../components/StyledComponents";
 import RainBackground from "@/components/RainBackground";
@@ -23,14 +23,10 @@ const Home = () => {
     <Section>
       <RainBackground />
       <HomeContainer>
-        {/* <ScrollingImages images={images} /> */}
-        {/* <OpaqueContainer /> */}
         <HeaderContainer>
           <Greeting>{'Frederick "Junior" Smeltzer'}</Greeting>
         </HeaderContainer>
-        <FlexContainer
-          style={{ flexDirection: "row" }}
-        >
+        <ProfileContainer>
           <Image
             style={{ borderRadius: "12px" }}
             width={3000 / size}
@@ -40,7 +36,7 @@ const Home = () => {
             unoptimized
           />
           <ResumeContainer>
-            <Container style={{justifyContent: "space-between" }}>
+            <Container style={{ justifyContent: "space-between" }}>
               <HomeCard style={{ alignItems: "center" }}>
                 <Description>Frontend Developer</Description>
                 <Date>11/2024</Date>
@@ -70,7 +66,7 @@ const Home = () => {
               </HomeCard>
             </Container>
           </ResumeContainer>
-        </FlexContainer>
+        </ProfileContainer>
       </HomeContainer>
     </Section>
   );

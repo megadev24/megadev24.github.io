@@ -8,7 +8,7 @@ const Contrabot = () => {
   return (
     <main>
       <RainBackground />
-      <FlexContainer style={{ color: "red" }}>
+      <FlexContainer style={{ color: "red", height: "100vh" }}>
         This is currently under development
       </FlexContainer>
     </main>

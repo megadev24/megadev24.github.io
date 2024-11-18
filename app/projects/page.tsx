@@ -14,30 +14,30 @@ import { useState } from "react";
 import { projects } from "../../utils/projects";
 import Model from "@/components/Model";
 import RainBackground from "@/components/RainBackground";
+import styled from "@emotion/styled";
+
+const ProjectsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+`;
+
+const StyledContainer = styled(Container)`
+  border: 1px solid white;
+  border-radius: 18px;
+  padding: 24px;
+  height: fit-content;
+  margin: 0 24px;
+`;
 
 const Projects: React.FC = () => {
   const [open, setIsOpen] = useState(false);
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: "80px",
-      }}
-    >
+    <ProjectsContainer>
       <RainBackground />
-
       <Section>
-        <Container
-          style={{
-            border: "1px solid white",
-            borderRadius: "18px",
-            padding: "24px",
-            height: "fit-content",
-            width: "1000px",
-          }}
-        >
+        <StyledContainer>
           <ProjectGrid>
             {projects?.map((project) => (
               <ProjectCard key={project.title}>
@@ -76,10 +76,10 @@ const Projects: React.FC = () => {
               </ProjectCard>
             ))}
           </ProjectGrid>
-        </Container>
+        </StyledContainer>
       </Section>
       <Model open={open} setIsOpen={setIsOpen} />
-    </div>
+    </ProjectsContainer>
   );
 };
 

@@ -12,6 +12,17 @@ import {
   Text,
 } from "../../components/StyledComponents";
 import RainBackground from "@/components/RainBackground";
+import styled from '@emotion/styled';
+
+const ResponsiveImage = styled(Image)`
+  width: 100%;
+  height: auto;
+  max-width: 756px;
+  border-radius: 18px;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 48px;
+`;
 
 const About = () => {
   return (
@@ -19,7 +30,7 @@ const About = () => {
       <RainBackground />
       <AboutContainer>
         <AboutSection>
-          <Image
+          <ResponsiveImage
             src={img}
             width={(1079 / 2) * 1.48}
             height={(727 / 2) * 1.48}
