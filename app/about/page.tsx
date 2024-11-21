@@ -44,15 +44,15 @@ const About = () => {
           <AboutDescriptionContainer>
             <SubHeading>About Me</SubHeading>
             <AboutCard>
-              <Text>
-                I&apos;m a passionate frontend developer with over 6 years of
+                <Text>
+                I&apos;m a passionate frontend developer with over <strong>6 years</strong> of
                 experience crafting dynamic and user-friendly web applications.
                 My journey in the world of programming began with a fascination
                 for creating interactive experiences that seamlessly blend form
                 and function. Since then, I&apos;ve honed my skills in
-                JavaScript, HTML/CSS, React, and TypeScript to bring digital
+                <strong> JavaScript, HTML/CSS, React, and TypeScript</strong> to bring digital
                 ideas to life.
-              </Text>
+                </Text>
             </AboutCard>
             <SubHeading>Professional Journey</SubHeading>
             <AboutCard>

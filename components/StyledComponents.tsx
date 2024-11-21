@@ -57,18 +57,12 @@ export const AboutContainer = styled(FlexContainer)`
   align-items: center;
   justify-content: center;
   margin-bottom: 80px;
-  border: 1px solid white;
-  border-radius: 18px;
-  padding: 0 2rem;
-  height: fit-content;
-  margin: 36px 24px 100px 24px;
 `;
 
 export const AboutDescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
 
   @media (max-width: 1000px) {
     width: 80vw;
@@ -94,7 +88,7 @@ export const Navbar = styled.header`
 `;
 
 export const Heading = styled.h1`
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
   color: #fff;
@@ -141,10 +135,14 @@ export const AboutSection = styled(Section)`
   align-items: center;
   flex-direction: column;
   height: 100%;
+  padding: 24px;
   background-color: transparent;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 1000px;
   color: white;
+  border: 1px solid white;
+  border-radius: 18px;
+  max-width: 800px;
 `;
 
 export const ProjectGrid = styled.div`
